@@ -1,0 +1,145 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+/* Yha se chalu hai css */
+.container{
+  margin: 2em;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.notes_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr) );
+}
+.note_body{
+  background-color: yellow;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 10px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+.note_footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button{
+  padding: 10px;
+  border:  none;
+  
+  border-radius: 5px;
+}
+.del{
+  background-color: rgb(141, 171, 236);
+}
+.save{
+  background-color: rgb(165, 234, 62);
+}
+.new.note_body{
+  background-color: rgb(198, 92, 92);
+
+}
+.inputnote{
+  height: 100px;
+  border: none;
+  background-color: rgb(198, 92, 92);
+  color: black;
+  resize: none;
+
+}
+.inputnote:focus{
+  border: none;
+  outline: none;
+}
+.header{
+  margin: 15px;
+  margin-bottom: 2em; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+.header input {
+  width: 80vw;
+  height: 50px;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+input:focus{
+  border: none;
+  outline: none;
+}
